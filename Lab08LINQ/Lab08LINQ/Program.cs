@@ -26,14 +26,15 @@ namespace Lab08LINQ
                 text = sr.ReadToEnd();
             }
 
-            List<Quotes> theQuotes =JsonConvert.DeserializeObject<List<Quotes>>(text);
+            List<NewYork> theQuotes =JsonConvert.DeserializeObject<List<NewYork>>(text);
 
-            IEnumerable<Quotes> allQuotes = theQuotes.Select(x => x);
+            IEnumerable<NewYork> allQuotes = theQuotes.Select(x => x);
 
-            foreach (Quotes Quotes in theQuotes)
+            foreach (NewYork Quotes in theQuotes)
                 
             {
-                Console.WriteLine(theQuotes);
+                Console.WriteLine(Quotes.Author);
+               
                 //if (Quotes.AuthorQuotes == theQuotes)
                 //{
                 //    Console.WriteLine(theQuotes);
