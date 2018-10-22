@@ -9,5 +9,6 @@ namespace Lab08LINQ.Classes
     {
         [JsonProperty("Author")]
         public string Author { get; set; }
+        public List<Quotes> AuthorQuotes { get; internal set; }
     }
 }
