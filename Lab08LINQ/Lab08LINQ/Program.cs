@@ -7,6 +7,7 @@ namespace Lab08LINQ
         static void Main(string[] args)
         {
             Console.WriteLine("LINQ in Manhatten");
+            Console.WriteLine("==========");
         }
     }
 }
