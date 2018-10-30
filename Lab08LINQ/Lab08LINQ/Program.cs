@@ -16,9 +16,9 @@ namespace Lab08LINQ
             JsonConversion();
         }
 
-        static void JsonConversion()
+        public static void JsonConversion()
         {
-            string path = "../../../most_popular_quotes.json";
+            string path = "../../../data.json";
             string text = "";
 
             using (StreamReader sr = File.OpenText(path))
@@ -26,25 +26,19 @@ namespace Lab08LINQ
                 text = sr.ReadToEnd();
             }
 
-            List<NewYork> theQuotes =JsonConvert.DeserializeObject<List<NewYork>>(text);
+            var Data = JsonConvert.DeserializeObject<FeatureCollection>(text);
 
-            IEnumerable<NewYork> allQuotes = theQuotes.Select(x => x);
+            //All neighborhoods with duplicates and empty lines
+            //Of the Lab assignment this satifies Query 1. Output all of the neighborhoods in this data list
+            var allNeighborhood = Data.Features.Select(x => x).Select(x => x.Properties).Select(x => x.neighborhood);
 
-            foreach (NewYork Quotes in theQuotes)
-                
+            foreach (var item in allNeighborhood)
             {
-                Console.WriteLine(Quotes.Author);
-               
-                //if (Quotes.AuthorQuotes == theQuotes)
-                //{
-                //    Console.WriteLine(theQuotes);
-                //}
+                Console.WriteLine(item);
             }
+            //Separation between next query
+            Console.WriteLine("====================");
         }
 
-        //static void LinqManhatten()
-        //{
-
-        //}
     }
 }
