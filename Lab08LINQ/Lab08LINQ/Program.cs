@@ -89,13 +89,13 @@ namespace Lab08LINQ
             //Use LINQ instead of Lamda => expressions
             //Of the Lab assignment this satifies 5. Rewrite at least one of these questions only using the opposing method (example: Use LINQ instead of a Lambda and vice versa.)
             //Object reference is required
-        }
 
-        static void LinqQuery()
-        {
-            var useLinq = from Properties in neighborhood
 
-                          
+            var useLinq = from hood in Properties
+                          where hood 
+                          select hood
+                         
+            
         }
     }
 }
