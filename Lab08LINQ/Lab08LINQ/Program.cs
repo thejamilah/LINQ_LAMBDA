@@ -11,7 +11,11 @@ namespace Lab08LINQ
         public static void Main(string[] args)
         {
             Console.WriteLine("LINQ in Manhatten");
+            Console.WriteLine("");
             Console.WriteLine("==========");
+            Console.WriteLine("");
+            Console.WriteLine("Query 1: All Neighborhoods Including Null Entries");
+            Console.WriteLine(" ");
             JsonConversion();
         }
 
@@ -40,6 +44,8 @@ namespace Lab08LINQ
             Console.WriteLine(" ");
             Console.WriteLine("====================");
             Console.WriteLine(" ");
+            Console.WriteLine("Query 2: All Neighborhoods Excluding Null Entries");
+            Console.WriteLine(" ");
 
             //All neighborhoods; do not print empty lines
             //Of the Lab assignment this satifies Query 2. Filter out all the neighborhoods that do not have any names
@@ -54,6 +60,8 @@ namespace Lab08LINQ
             Console.WriteLine(" ");
             Console.WriteLine("===================");
             Console.WriteLine(" ");
+            Console.WriteLine("Query 3: All Neighborhoods Removing Duplicates");
+            Console.WriteLine(" ");
 
             //Remove neighborhood using .Distint() reference https://www.dotnetperls.com/distinct for future reference
             //Of the Lab assignment this satifies Query 3. Remove the Duplicates
@@ -67,6 +75,8 @@ namespace Lab08LINQ
             //Separation between next query
             Console.WriteLine(" ");
             Console.WriteLine("===================");
+            Console.WriteLine(" ");
+            Console.WriteLine("Query 4: Re-Write Query Using Single Query");
             Console.WriteLine(" ");
 
             //Consolidate 
@@ -85,17 +95,22 @@ namespace Lab08LINQ
             Console.WriteLine(" ");
             Console.WriteLine("====================");
             Console.WriteLine(" ");
+            Console.WriteLine("Query 5: Query Using LINQ Instead of Lambda Expressions");
+            Console.WriteLine(" ");
 
             //Use LINQ instead of Lamda => expressions
             //Of the Lab assignment this satifies 5. Rewrite at least one of these questions only using the opposing method (example: Use LINQ instead of a Lambda and vice versa.)
-            //Object reference is required
+            //Object reference is required. And don't forget to [JsonProperty] all your data dum dum!
 
+            var useLinq = (from y in Data.Features
+                           where y.Properties.neighborhood != ""
+                           select y.Properties.neighborhood).Distinct();
 
-            var useLinq = from hood in Properties
-                          where hood 
-                          select hood
-                         
-            
+            foreach (var item in useLinq)
+            {
+                Console.WriteLine(item);
+            }
+           
         }
     }
 }
