@@ -18,7 +18,6 @@ https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expr
 This blog article dates back to 2009 but walks through the C# versions that introduced the use of Lambda expressions in C# </br>
 https://weblogs.asp.net/dixin/understanding-csharp-features-5-lambda-expression </br>
 
-
 ### What to Know Regading LINQ and Lambda
 _LINQ_ </br>
 If you have worked with a database such as SQL then you will have a starting point to understand the basics of LINQ </br>
