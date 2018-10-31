@@ -36,7 +36,7 @@ parameters => (Lambda) body of expression; you may also have multiple statements
 * Use Lambda statements
 * Questions and answers output to console
 
-### Visual
+### Output Visual
 ![q1](https://user-images.githubusercontent.com/39015829/47762029-246b5400-dc78-11e8-89ac-1488ce40b2c5.jpg)
 ![q2](https://user-images.githubusercontent.com/39015829/47762030-246b5400-dc78-11e8-9526-00d7215efefe.jpg)
 ![q3](https://user-images.githubusercontent.com/39015829/47762031-246b5400-dc78-11e8-89dc-35fafc0de7ba.jpg)
