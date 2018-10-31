@@ -38,3 +38,8 @@ parameters => (Lambda) body of expression; you may also have multiple statements
 * Questions and answers output to console
 
 ### Visual
+![q1](https://user-images.githubusercontent.com/39015829/47762029-246b5400-dc78-11e8-89ac-1488ce40b2c5.jpg)
+![q2](https://user-images.githubusercontent.com/39015829/47762030-246b5400-dc78-11e8-9526-00d7215efefe.jpg)
+![q3](https://user-images.githubusercontent.com/39015829/47762031-246b5400-dc78-11e8-89dc-35fafc0de7ba.jpg)
+![q4](https://user-images.githubusercontent.com/39015829/47762032-2503ea80-dc78-11e8-8828-3eada9dfd387.jpg)
+![q5](https://user-images.githubusercontent.com/39015829/47762033-2503ea80-dc78-11e8-9f0b-52ff95c686cd.jpg)
