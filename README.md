@@ -1,8 +1,10 @@
-# Lab 08
-## .NET C# Educational Lab Assignment - LINQ in Manhatten
+# .NET Core C# LINQ 
 
-## LINQ Query 
-This is an educational assignment that focuses on LINQ Query (Language INtegrated Queries) and Lambda Expressions </br>
+## Learning Objectives
+LINQ Query (Language INtegrated Queries) and Lambda Expressions </br>
+* Use LINQ Queries
+* Use Lambda statements
+* Questions and answers output to console
 
 #### LINQ Documentation
 You can read more about LINQ using the MSDOCS link (haha) below </br>
@@ -29,12 +31,6 @@ _Lambda_ </br>
 You will see a lot of prou documentation regarding the introduction of Lambda expressions starting with C# 3.0 along with LINQ at the time. </br>
 The basic structure of a Lambda expression is as follows: </br>
 parameters => (Lambda) body of expression; you may also have multiple statements for Lambda expressions in the body of expression. </br>
-
-### Assignment Instructions
-* JSON File is provied
-* Use LINQ Queries
-* Use Lambda statements
-* Questions and answers output to console
 
 ### Output Visual
 ![q1](https://user-images.githubusercontent.com/39015829/47762029-246b5400-dc78-11e8-89ac-1488ce40b2c5.jpg)
